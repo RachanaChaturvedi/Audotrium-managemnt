@@ -1,0 +1,31 @@
+@keyframes slide {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; width: 90%; margin-left: 50px;}
+div#slider figure img { width: 12%; height: 94%; margin: 20px; float: left; }
+
+div#slider figure { 
+  position: relative;
+  width: 800%;
+  margin: 30px;
+  height: 500px;
+  background-color: blue;
+  left: 300px;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slide infinite;   
+}
+
+.img:hover{
+	transform: scale(1.3);
+}
